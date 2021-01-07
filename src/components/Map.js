@@ -3,7 +3,7 @@ import GoogleMapReact from 'google-map-react';
 
 import { useCurrentLocation } from '../lib/userLocation';
 
-const API_KEY = 'AIzaSyAs_fPF3j1pcQYUU2s0WMI27zhV7oe8kks';
+const API_KEY = process.env.REACT_APP_GOOGLE_MAP_API_KEY;
 
 export function Map() {
   const { location, error } = useCurrentLocation();
